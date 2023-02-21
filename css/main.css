@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Roboto:ital,wght@1,300&display=swap');
+
+/* Elementos Generales */
+:root{
+    --bg-color-1 : #cde8e9;
+    --bg-color-2 : #ff6d70;
+    --bg-color-3 : #ffc600;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family: 'Kalam', cursive;
+}
+
+.seccion-dark{
+    background-color: var(--bg-color-2);
+    color: white;
+    font-family: 'Rubik Dirt',cursive;
+}
+
+.seccion-light{
+    color: black;
+    background-color: var(--bg-color-1);
+}
+
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Kalam',cursive;
+}
+
+.seccion-descripcion{
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sobre-mi p{
+    color: white;
+}
+
+/* Barra de navegacion */
+.navbar{
+    padding: 2rem;
+    background-color: var(--bg-color-1);
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-pag{
+    width: 50px;
+}
+
+/* Seccion Hero */
+.hero{
+    background-color: var(--bg-color-1);
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-principal{
+    padding: 3rem;
+}
+
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: #454441;
+}
+
+.hero-user{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+
+/* Sobre mi */
+.sobre-mi{
+    height: 500px;
+    padding: 10px;
+}
+
+.sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Experiencias */
+.experiencia{
+    padding: 40px 40px 60px 40px;
+}
+
+.experiencia i{
+    font-size: 2.5rem;
+    color: var(--bg-color-3);
+    background-color: var(--bg-color-2);
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.experiencia-titulo{
+    font-family: 'Kalam',cursive;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 18px;
+}
+
+.badges-contenedor{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.badges{
+    margin: 5px;
+    background-color: var(--bg-color-3);
+}
+
+.experiencia .columna{
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover{
+    color: white;
+    background-color: var(--bg-color-2);
+}
+
+/* Footer */
+footer{
+    min-height: 500px;
+}
+
+.footer-logo{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;;
+}
+
+.iconos-redes-sociales a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid var(--bg-color-2);
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i{
+    color: var(--bg-color-2);
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover{
+    background-color: var(--bg-color-3);
+    border: 2px solid black;
+}
+
+.iconos-redes-sociales a:hover i{
+    color: black;
+}
+
+.derechos-autor{
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+
+/* Adaptacion de pantalla */
+@media screen and (max-width: 768px){
+    .navbar-brand{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .hero-inferior-imagen {
+        max-width: 600px;
+    }
+}
